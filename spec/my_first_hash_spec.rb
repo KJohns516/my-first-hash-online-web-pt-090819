@@ -7,7 +7,7 @@ context "Challenge I: Instantiating Hashes" do
     it "uses the literal constructor to create a hash that contains key/value pairs" do 
       expect(my_hash).to be_a(Hash)
       expect(my_hash.keys.count).to_not eq(0)
-      my_hash (78)
+      my_hash ("my name")
     end
   end
 end
