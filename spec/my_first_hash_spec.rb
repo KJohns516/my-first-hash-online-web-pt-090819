@@ -7,6 +7,7 @@ context "Challenge I: Instantiating Hashes" do
     it "uses the literal constructor to create a hash that contains key/value pairs" do 
       expect(my_hash).to be_a(Hash)
       expect(my_hash.keys.count).to_not eq(0)
+      my_hash [("my name"])
     end
   end
 end
@@ -16,6 +17,7 @@ context "Challenge II: Hash with Data" do
     it "returns a hash with key/value pairs describing old-timey items" do 
       expect(shipping_manifest.keys).to match_array(["whale bone corsets", "oil paintings", "porcelain vases"])
       expect(shipping_manifest.values).to match_array([2, 5, 3])
+      shipping_manifest [2,5,3]
     end
   end
 end
